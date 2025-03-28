@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const yt_dlp = require("yt-dlp");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
